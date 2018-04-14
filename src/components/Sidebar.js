@@ -8,6 +8,7 @@ const iconStyle = {
   'marginRight': '8px'
 }
 
+
 export default class Sidebar extends React.Component {
   constructor(props) {
     super(props);
@@ -26,7 +27,7 @@ export default class Sidebar extends React.Component {
             Dashboard
           </MenuItem>
           <MenuItem
-            onClick={() => { hashHistory.push('/test') }}
+            onClick={() => { hashHistory.push('/profile') }}
           >
             <span style={iconStyle} className="icon-user"></span>
             Profile

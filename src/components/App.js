@@ -4,6 +4,11 @@ import AppBar from 'material-ui/AppBar';
 import Sidebar from './Sidebar';
 
 const sidebarWidth = 200;
+const blocktricityGrey= "#c3c3c3";
+const appBarStyle = {
+  "backgroundColor": blocktricityGrey,
+  "zIndex": "2000"
+}
 
 export default class App extends React.Component {
   render() {
@@ -14,7 +19,7 @@ export default class App extends React.Component {
           title="BLOCKTRICITY"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           showMenuIconButton={false}
-          style={{ "zIndex": "2000" }}
+          style={appBarStyle}
         />
         <Sidebar width={sidebarWidth} />
         <div style={{ "marginLeft": sidebarWidth + 100 + "px" }}>
