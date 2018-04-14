@@ -40,6 +40,10 @@ export default class Sidebar extends React.Component {
             <span style={iconStyle} className="icon-envelop"></span>
             Messenger
           </MenuItem>
+          <MenuItem>
+            <span style={iconStyle} className="icon-calculator"></span>
+            Link Smartmeter
+          </MenuItem>
         </Drawer>
       </div>
     );

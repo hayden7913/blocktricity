@@ -23,12 +23,12 @@ export default class App extends React.Component {
     <MuiThemeProvider>
       <div>
         <AppBar
-          title="BLOCKTRICITY"
+          title="Blocktricity Builder"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           showMenuIconButton={false}
           style={styles.appBar}
         />
-        
+
         <Sidebar width={sidebarWidth} />
         <div style={styles.pageContainer}>
           {this.props.children}
