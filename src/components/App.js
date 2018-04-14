@@ -5,9 +5,15 @@ import Sidebar from './Sidebar';
 
 const sidebarWidth = 200;
 const blocktricityGrey= "#c3c3c3";
-const appBarStyle = {
-  "backgroundColor": blocktricityGrey,
-  "zIndex": "2000"
+const styles = {
+  pageContainer: {
+    "marginLeft": sidebarWidth + "px",
+    "paddingTop": 20,
+  },
+   appBar: {
+    "backgroundColor": blocktricityGrey,
+    "zIndex": "2000"
+  },
 }
 
 export default class App extends React.Component {
@@ -19,10 +25,10 @@ export default class App extends React.Component {
           title="BLOCKTRICITY"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           showMenuIconButton={false}
-          style={appBarStyle}
+          style={styles.appBar}
         />
         <Sidebar width={sidebarWidth} />
-        <div style={{ "marginLeft": sidebarWidth + "px" }}>
+        <div style={styles.pageContainer}>
           {this.props.children}
         </div>
       </div>
