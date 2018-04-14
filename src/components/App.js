@@ -1,6 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
+import LoadPanel from './LoadPanels.js'
 import Sidebar from './Sidebar';
 
 const sidebarWidth = 200;
@@ -27,6 +28,7 @@ export default class App extends React.Component {
           showMenuIconButton={false}
           style={styles.appBar}
         />
+        
         <Sidebar width={sidebarWidth} />
         <div style={styles.pageContainer}>
           {this.props.children}
