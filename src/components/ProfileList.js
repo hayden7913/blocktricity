@@ -19,6 +19,7 @@ const gridStyles = {
 
 const cardStyles = {
   card: {
+    height: '375px',
     width: '350px',
   },
   image: {
@@ -26,6 +27,10 @@ const cardStyles = {
   },
   dataPoint: {
     fontSize: '20px',
+  },
+  dataPointSecondary: {
+    fontSize: '25px',
+    marginTop: '29px',
   }
 }
 

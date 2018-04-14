@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mvrqk3');
-  src:  url('fonts/icomoon.eot?mvrqk3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mvrqk3') format('truetype'),
-    url('fonts/icomoon.woff?mvrqk3') format('woff'),
-    url('fonts/icomoon.svg?mvrqk3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ni6ph8');
+  src:  url('fonts/icomoon.eot?ni6ph8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ni6ph8') format('truetype'),
+    url('fonts/icomoon.woff?ni6ph8') format('woff'),
+    url('fonts/icomoon.svg?ni6ph8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,6 +35,9 @@
 }
 .icon-coin-dollar:before {
   content: "\e93b";
+}
+.icon-calculator:before {
+  content: "\e940";
 }
 .icon-envelop:before {
   content: "\e945";

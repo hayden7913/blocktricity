@@ -15,6 +15,11 @@ const styles = {
     "position": "fixed",
     "zIndex": "2000"
   },
+  logo: {
+    position: "absolute",
+    top: "7px",
+    height: "50px",
+  },
 }
 
 export default class App extends React.Component {
@@ -23,13 +28,15 @@ export default class App extends React.Component {
     <MuiThemeProvider>
       <div>
         <AppBar
-          title="BLOCKTRICITY"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           showMenuIconButton={false}
           style={styles.appBar}
-        />
+        >
+          <img style={styles.logo} src="images/logo.png" alt="" />
+        </AppBar>
         <Sidebar width={sidebarWidth} />
         <div style={styles.pageContainer}>
+
           {this.props.children}
         </div>
       </div>

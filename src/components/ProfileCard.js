@@ -16,9 +16,16 @@ export default class ProfileItem extends React.Component {
         </CardMedia>
         <CardText style={{ textAlign: "center"}}>
           <div style={{ display: "inline-block" }}>
-            <h1 style={this.props.styles.dataPoint}>{this.props.dataTop}</h1>
-            <Divider />
-            <h1 style={this.props.styles.dataPoint}>{this.props.dataBottom}</h1>
+            <h1 style={this.props.dataBottom ? this.props.styles.dataPoint : this.props.styles.dataPointSecondary}>
+              {this.props.dataTop}
+            </h1>
+            {this.props.dataBottom
+              ? (<div>
+                  <Divider />
+                  <h1 style={this.props.styles.dataPoint}>{this.props.dataBottom}</h1>
+                </div>)
+              : <div></div>
+            }
           </div>
         </CardText>
       </Card>

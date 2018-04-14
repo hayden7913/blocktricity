@@ -23,7 +23,7 @@ export default class Sidebar extends React.Component {
             onClick={() => { hashHistory.push('/') }}
             style={{"marginTop": "70px"}}
           >
-            <span style={iconStyle} className="icon-meter"></span>
+            <span style={iconStyle} className="icon-calculator"></span>
             Dashboard
           </MenuItem>
           <MenuItem
@@ -39,6 +39,10 @@ export default class Sidebar extends React.Component {
           <MenuItem>
             <span style={iconStyle} className="icon-envelop"></span>
             Messenger
+          </MenuItem>
+          <MenuItem>
+            <span style={iconStyle} className="icon-meter"></span>
+            Link Smart Meter
           </MenuItem>
         </Drawer>
       </div>
