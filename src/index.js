@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 
 import store from './store/store';
 import App from './components/App'
-import HomePage from './components/HomePage';
-import OtherPage from './components/OtherPage';
+import DashboardPage from './components/DashboardPage';
+import ProfilePage from './components/ProfilePage';
 
 // import './styles/bootstrap/css/bootstrap.min.css';
 // import './styles/bootstrap/css/bootstrap-grid.css';
@@ -19,8 +19,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={HomePage}/>
-        <Route path="test" component={OtherPage}/>
+        <IndexRoute component={DashboardPage}/>
+        <Route path="/profile" component={ProfilePage}/>
       </Route>
     </Router>
   </Provider>,

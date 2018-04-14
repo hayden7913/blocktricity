@@ -3,7 +3,19 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import LoadPanel from './LoadPanels.js'
 import Sidebar from './Sidebar';
-import Tabs from './Tabs';
+
+const sidebarWidth = 200;
+const blocktricityGrey= "#c3c3c3";
+const styles = {
+  pageContainer: {
+    "marginLeft": sidebarWidth + "px",
+    "paddingTop": 20,
+  },
+   appBar: {
+    "backgroundColor": blocktricityGrey,
+    "zIndex": "2000"
+  },
+}
 
 export default class App extends React.Component {
   render() {
@@ -13,11 +25,14 @@ export default class App extends React.Component {
         <AppBar
           title="BLOCKTRICITY"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
-          showMenuIcon={false}
+          showMenuIconButton={false}
+          style={styles.appBar}
         />
-        <Sidebar />
-        <LoadPanels/>
-        {/* {this.props.children} */}
+        
+        <Sidebar width={sidebarWidth} />
+        <div style={styles.pageContainer}>
+          {this.props.children}
+        </div>
       </div>
     </MuiThemeProvider>
     );

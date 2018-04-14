@@ -95,7 +95,7 @@ export default class LoadPanels extends React.Component {
   render() {
     return (
       <div>
-        <Card style={{margin: '15px'}}>
+        <Card style={{margin: '10px 50px 10px 50px'}}>
             <CardHeader
                 title={user1.name}
                 subtitle="My load"
@@ -109,7 +109,7 @@ export default class LoadPanels extends React.Component {
             </CardText>
         </Card>
 
-        <Card style={{margin: '15px'}}>
+        <Card style={{margin: '25px 50px 25px 50px'}}>
             <CardHeader
                 title="The community"
                 subtitle="The load"
