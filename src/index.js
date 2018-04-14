@@ -8,8 +8,10 @@ import App from 'components/App'
 import HomePage from 'components/HomePage';
 import OtherPage from 'components/OtherPage';
 
-import './styles/index.scss';
 import './styles/icons/style.css';
+import './styles/bootstrap/css/bootstrap.min.css';
+import './styles/bootstrap/css/bootstrap-grid.css';
+import './styles/index.scss';
 
 
 ReactDOM.render(
