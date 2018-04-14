@@ -8,9 +8,10 @@ import App from 'components/App'
 import HomePage from 'components/HomePage';
 import OtherPage from 'components/OtherPage';
 
+import 'semantic-ui-css/semantic.min.css';
 import './styles/icons/style.css';
-import './styles/bootstrap/css/bootstrap.min.css';
-import './styles/bootstrap/css/bootstrap-grid.css';
+// import './styles/bootstrap/css/bootstrap.min.css';
+// import './styles/bootstrap/css/bootstrap-grid.css';
 import './styles/index.scss';
 
 
