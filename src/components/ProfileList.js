@@ -10,10 +10,10 @@ const styles = {
     marginTop: '50px',
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
   },
   gridList: {
-    width: 500,
+    width: 1000,
     height: 450,
   },
   gridTile: {
@@ -46,26 +46,18 @@ const tilesData = [
 ];
 
 /**
- * A simple example of a scrollable `GridList` containing a [Subheader](/#/components/subheader).
+ * A simple example of a scrollable `div` containing a [Subheader](/#/components/subheader).
  */
 const GridListExampleSimple = () => (
   <div style={styles.root}>
-    <GridList
-      cellHeight={180}
+    <div
       style={styles.gridList}
     >
-      {tilesData.map((tile) => (
-        <GridTile
-          key={tile.img}
-          title={tile.title}
-          subtitle={<span>by <b>{tile.author}</b></span>}
-          style={styles.gridTile}
-          actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
-        >
-          <img src={tile.img} />
-        </GridTile>
-      ))}
-    </GridList>
+      <ProfileItem />
+      <ProfileItem />
+      <ProfileItem />
+      <ProfileItem />
+    </div>
   </div>
 );
 
