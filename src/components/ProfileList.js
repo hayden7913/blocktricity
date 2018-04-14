@@ -1,5 +1,6 @@
 import React from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
+import shortid from 'shortid';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
@@ -18,10 +19,10 @@ const gridStyles = {
 
 const cardStyles = {
   card: {
-    width: '400px',
+    width: '300px',
   },
   image: {
-    height: "300px"
+    height: '250px',
   },
   dataPoint: {
     fontSize: '20px',
@@ -30,8 +31,9 @@ const cardStyles = {
 
 export default class ProfileList extends React.Component {
   renderCard = (card) => {
+    const key = shortid.generate();
     return (
-      <div className="col4" style={gridStyles.col}>
+      <div key={key} className="col4" style={gridStyles.col}>
         <ProfileCard
           {...card}
           styles={cardStyles}
@@ -48,11 +50,13 @@ export default class ProfileList extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: "0 10%" }}>
+      <div style={{ padding: "0 7%" }}>
         <div style={gridStyles.row} className="row">
-          {this.renderCards(cards)}
+          {this.renderCards(cards.slice(0,3))}
         </div>
-        <div style={gridStyles.row} className="row"></div>
+        <div style={gridStyles.row} className="row">
+          {this.renderCards(cards.slice(3,6))}
+        </div>
       </div>
     );
   }
