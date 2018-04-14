@@ -1,18 +1,23 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+import Sidebar from './Sidebar';
+import Tabs from './Tabs';
 
 export default class App extends React.Component {
   render() {
     return (
+    <MuiThemeProvider>
       <div>
-        <Menu borderless>
-          <Menu.Item
-            header
-            name="BLOCKTRICITY"
-          />
-        </Menu>
-        {this.props.children}
+        <AppBar
+          title="BLOCKTRICITY"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          showMenuIcon={false}
+        />
+        <Sidebar />
+        {/* {this.props.children} */}
       </div>
+    </MuiThemeProvider>
     );
   }
 }
