@@ -1,6 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
+import LoadPanel from './LoadPanels.js'
 import Sidebar from './Sidebar';
 import Tabs from './Tabs';
 
@@ -15,6 +16,7 @@ export default class App extends React.Component {
           showMenuIcon={false}
         />
         <Sidebar />
+        <LoadPanels/>
         {/* {this.props.children} */}
       </div>
     </MuiThemeProvider>
