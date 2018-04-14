@@ -19,7 +19,7 @@ const gridStyles = {
 
 const cardStyles = {
   card: {
-    width: '300px',
+    width: '350px',
   },
   image: {
     height: '250px',
@@ -50,7 +50,7 @@ export default class ProfileList extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: "0 7%" }}>
+      <div style={{ padding: "0 5%" }}>
         <div style={gridStyles.row} className="row">
           {this.renderCards(cards.slice(0,3))}
         </div>

@@ -11,7 +11,7 @@ export default class ProfileItem extends React.Component {
         >
           <img
             style={this.props.styles.image}
-            src="images/energy-contract.jpg"
+            src={this.props.imagePath}
           />
         </CardMedia>
         <CardText style={{ textAlign: "center"}}>

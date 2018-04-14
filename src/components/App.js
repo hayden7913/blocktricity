@@ -8,10 +8,11 @@ const blocktricityGrey= "#c3c3c3";
 const styles = {
   pageContainer: {
     "marginLeft": sidebarWidth + "px",
-    "paddingTop": 20,
+    "paddingTop": 125,
   },
    appBar: {
     "backgroundColor": blocktricityGrey,
+    "position": "fixed",
     "zIndex": "2000"
   },
 }
