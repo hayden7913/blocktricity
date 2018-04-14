@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import { Provider } from 'react-redux';
 
-import store from 'reduxFiles/store';
-import App from 'components/App'
-import HomePage from 'components/HomePage';
-import OtherPage from 'components/OtherPage';
+import store from './store/store';
+import App from './components/App'
+import HomePage from './components/HomePage';
+import OtherPage from './components/OtherPage';
 
-import 'semantic-ui-css/semantic.min.css';
-import './styles/icons/style.css';
 // import './styles/bootstrap/css/bootstrap.min.css';
 // import './styles/bootstrap/css/bootstrap-grid.css';
+import 'semantic-ui-css/semantic.min.css';
+import './styles/icons/style.css';
 import './styles/index.scss';
 
 
