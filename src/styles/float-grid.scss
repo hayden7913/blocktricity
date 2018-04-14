@@ -36,13 +36,15 @@ $test-border-color: transparent;
   // }
 }
 
-.col5 {
-  width: (5 / 12) * 100%;
+.col4 {
+  border: 1px solid $test-border-color;
+  width: 33%;
 
-  // @include respond-to(small-screen) {
-  //   width: 100%;
-  // }
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
+
 .col6 {
   border: 1px solid $test-border-color;
   width: 50%;

@@ -4,8 +4,7 @@ import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
-import cards from '../constants/cards';
-console.log(cards);
+import { cards } from '../constants/cards';
 import ProfileCard from './ProfileCard';
 import Divider from './Divider';
 
@@ -31,24 +30,27 @@ const cardStyles = {
 
 export default class ProfileList extends React.Component {
   renderCard = (card) => {
-    <ProfileCard
-      {...card}
-    />
+    return (
+      <div className="col4" style={gridStyles.col}>
+        <ProfileCard
+          {...card}
+          styles={cardStyles}
+        />
+      </div>
+    );
+  }
+
+  renderCards = (cards) => {
+    return (
+      cards.map(card => this.renderCard(card))
+    );
   }
 
   render() {
     return (
       <div style={{ padding: "0 10%" }}>
         <div style={gridStyles.row} className="row">
-          <div className="col6" style={gridStyles.col}>
-            <ProfileCard
-              title="Energy Conract"
-              image="images/energy-contract.jpg"
-              styles={{ ...cardStyles }}
-              dataTop="76% Capacity Use"
-              dataBottom="1 Overdischarge This Week"
-            />
-          </div>
+          {this.renderCards(cards)}
         </div>
         <div style={gridStyles.row} className="row"></div>
       </div>
