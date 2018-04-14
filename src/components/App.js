@@ -12,7 +12,8 @@ export default class App extends React.Component {
         <AppBar
           title="BLOCKTRICITY"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
-          showMenuIcon={false}
+          showMenuIconButton={false}
+          style={{ "zIndex": "2000" }}
         />
         <Sidebar />
         {/* {this.props.children} */}

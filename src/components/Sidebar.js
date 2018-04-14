@@ -3,6 +3,10 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 
+const style = {
+  'zIndex': 0
+}
+
 export default class Sidebar extends React.Component {
   constructor(props) {
     super(props);
@@ -11,14 +15,12 @@ export default class Sidebar extends React.Component {
 
   render() {
     return (
-      <div>
-        <RaisedButton
-          label="Toggle Drawer"
-          onClick={this.handleToggle}
-        />
-        <Drawer open>
-          <MenuItem>Menu Item</MenuItem>
-          <MenuItem>Menu Item 2</MenuItem>
+      <div style={style}>
+        <Drawer docked>
+          <MenuItem style={{"marginTop": "70px"}}>Dashboard</MenuItem>
+          <MenuItem>Profile</MenuItem>
+          <MenuItem>Marketplace</MenuItem>
+          <MenuItem>Messenger</MenuItem>
         </Drawer>
       </div>
     );
