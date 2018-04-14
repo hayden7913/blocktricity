@@ -8,6 +8,7 @@ export default class App extends React.Component {
       <MuiThemeProvider>
         <div>
           <AppBar
+            showMenuIconButton={false}
             title="BLOCKTRICITY"
           />
           {this.props.children}
