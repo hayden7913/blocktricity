@@ -22,7 +22,7 @@ export default class App extends React.Component {
           style={appBarStyle}
         />
         <Sidebar width={sidebarWidth} />
-        <div style={{ "marginLeft": sidebarWidth + 100 + "px" }}>
+        <div style={{ "marginLeft": sidebarWidth + "px" }}>
           {this.props.children}
         </div>
       </div>

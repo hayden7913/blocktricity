@@ -7,6 +7,7 @@ import ProfileItem from './ProfileItem';
 
 const styles = {
   root: {
+    marginTop: '50px',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -17,7 +18,7 @@ const styles = {
   },
   gridTile: {
     "border": "1px solid black",
-    "marginLeft": "50px"
+    "marginRight": "50px"
   }
 };
 
@@ -53,7 +54,6 @@ const GridListExampleSimple = () => (
       cellHeight={180}
       style={styles.gridList}
     >
-      <Subheader>December</Subheader>
       {tilesData.map((tile) => (
         <GridTile
           key={tile.img}
