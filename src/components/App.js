@@ -2,7 +2,8 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import Sidebar from './Sidebar';
-import Tabs from './Tabs';
+
+const sidebarWidth = 200;
 
 export default class App extends React.Component {
   render() {
@@ -15,8 +16,10 @@ export default class App extends React.Component {
           showMenuIconButton={false}
           style={{ "zIndex": "2000" }}
         />
-        <Sidebar />
-        {/* {this.props.children} */}
+        <Sidebar width={sidebarWidth} />
+        <div style={{ "marginLeft": sidebarWidth + 100 + "px" }}>
+          {this.props.children}
+        </div>
       </div>
     </MuiThemeProvider>
     );
