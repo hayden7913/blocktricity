@@ -48,15 +48,28 @@ const tilesData = [
 /**
  * A simple example of a scrollable `div` containing a [Subheader](/#/components/subheader).
  */
+const box = {
+  display: 'flex',
+  height: 300,
+  width: 300,
+  border: '1px solid black',
+  justifyContent: 'center',
+  flexDirection: 'column',
+}
+
+const row = {
+
+}
+
 const GridListExampleSimple = () => (
   <div style={styles.root}>
     <div
       style={styles.gridList}
     >
-      <ProfileItem />
-      <ProfileItem />
-      <ProfileItem />
-      <ProfileItem />
+      <div style={box}></div>
+      <div style={box}></div>
+      <div style={box}></div>
+      <div style={box}></div>
     </div>
   </div>
 );
