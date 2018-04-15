@@ -17,25 +17,14 @@ const data = {
       labels: ['19', '20h', '21h', '22h', '23h', '00h','01h', '02h','03h','04h','05h','06h','07h','08h','09h','10h','11h','12h','13h','14h', '15h', '16h', '17h', '18h'],
       datasets: [
         {
-            label: 'Personal load',
+            label: 'Storage load',
             fill: false,
             lineTension: 0.1,
             borderColor: '#FF6384',
             pointBorderColor: '#FF6384',
             pointBackgroundColor: '#fff',
-            data: [1465.5,1349.7,1295.7,1277.7,1274.1,1587.6,1312.2,1122,1198.2,1510.5,1471.5,1438.8,1437.6,1418.4,1370.1,1328.1,1352.7,1453.2,1591.2,1693.5,1764,1849.2,1732.5,1629.3]
+            data: [576.454704,802.010854,1002.967865,1159.676498,1263.595227,1011.483542,937.9592226,664.834809,391.6804955,-15.42412192,95.96148708,392.1860565,787.7479405,1245.64251,1756.699303,2242.050553,2596.393038,2724.2148,2246.647358,1581.985144,938.454656,685.404548,647.665116,709.443564]
         },
-        {
-            label: 'Average load',
-            fill: false,
-            lineTension: 0.1,
-            borderColor: '#36A2EB',
-            pointBorderColor: '#36A2EB',
-            pointBackgroundColor: '#fff',
-            data: [1573.8,1453.5,1387.2,1351.2,1337.4,1341.9,1352.1,1446.6,1531.2,1568.7,1571.4,1575.3,1588.5,1589.4,1539.3,1498.2,1512.6,1594.2,1710,1803.3,1865.4,1947,1846.2,1742.4
-            ]
-          },
-    
       ]
     };
 
@@ -55,9 +44,8 @@ export default class BigProfile extends React.Component {
           />
         </CardMedia>
         <CardText style={{ textAlign: "center"}}>
-            <div style={{display: 'flex', alignItems: 'center', margin: '0 auto', justifyContent: 'center', paddingLeft: '75px'}}>
+            <div style={{display: 'flex', alignItems: 'center', margin: '20px auto', justifyContent: 'center'}}>
                 <Line data={data} options={options}/>
-
             </div>
         </CardText>
       </Card>
