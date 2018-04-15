@@ -32,7 +32,6 @@ const data = {
 export default class BigProfile extends React.Component {
 
   render() {
-    console.log(this.props.styles)
     return (
       <Card style={this.props.styles.card} onClick={() => hashHistory.push("/storage")}>
         <CardMedia
