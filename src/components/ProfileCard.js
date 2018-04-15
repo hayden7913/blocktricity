@@ -1,13 +1,16 @@
 import React from 'react';
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import { hashHistory, Link } from 'react-router';
 import Divider from './Divider';
 
 export default class ProfileItem extends React.Component {
   render() {
+    console.log(this.props.styles)
     return (
-      <Card style={this.props.styles.card}>
+      <Card style={this.props.styles.card} onClick={() => hashHistory.push("/storage")}>
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
+          style={{ height: '300px' }}
         >
           <img
             style={this.props.styles.image}
