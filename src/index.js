@@ -8,6 +8,7 @@ import App from './components/App'
 import DashboardPage from './components/DashboardPage';
 import ProfilePage from './components/ProfilePage';
 import StoragePage from './components/StoragePage';
+import StorageList from './components/StorageList';
 
 // import './styles/bootstrap/css/bootstrap.min.css';
 // import './styles/bootstrap/css/bootstrap-grid.css';
@@ -23,6 +24,7 @@ ReactDOM.render(
         <IndexRoute component={DashboardPage}/>
         <Route path="/profile" component={ProfilePage}/>
         <Route path="/storage" component={StoragePage}/>
+        <Route path="/test" component={StorageList}/>
       </Route>
     </Router>
   </Provider>,

@@ -5,9 +5,9 @@ import Divider from './Divider';
 
 export default class ProfileItem extends React.Component {
   render() {
-    console.log(this.props.styles)
+
     return (
-      <Card style={this.props.styles.card} onClick={() => hashHistory.push("/storage")}>
+      <Card className="profile-card" style={this.props.styles.card} onClick={() => hashHistory.push("/storage")}>
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
           style={{ height: '300px' }}

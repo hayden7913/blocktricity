@@ -19,7 +19,7 @@ const gridStyles = {
 
 const cardStyles = {
   card: {
-    height: '375px',
+    height: '420px',
     width: '350px',
   },
   image: {
