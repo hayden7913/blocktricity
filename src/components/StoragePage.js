@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import LoadPanels from './LoadPanels.js'
 import ProfileCard from './ProfileCard.js'
-
+import BigProfile from './BigProfileCard.js'
 import { cards } from '../constants/cards';
 
 const cardStyles = {
@@ -35,7 +35,7 @@ export default class StoragePage extends React.Component {
   render() {
     return (
       <div>
-        <ProfileCard
+        <BigProfile
           {...storageCard}
           styles={cardStyles}
         />
