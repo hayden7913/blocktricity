@@ -3,6 +3,7 @@ import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'm
 import { hashHistory, Link } from 'react-router';
 import { Line } from 'react-chartjs-2';
 import Divider from './Divider';
+import StorageList from './StorageList';
 
 
 var options = {
@@ -47,6 +48,7 @@ export default class BigProfile extends React.Component {
             <div style={{display: 'flex', alignItems: 'center', margin: '20px auto', justifyContent: 'center'}}>
                 <Line data={data} options={options}/>
             </div>
+            <StorageList style={{marginTop: 30}}></StorageList>
         </CardText>
       </Card>
     );
